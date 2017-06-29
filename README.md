@@ -21,7 +21,7 @@ dotfiles config --local status.showUntrackedFiles no
 Be sure to add the alias to `.zshrc`, either manually or like this:
 
 ```
-echo "alias alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
+echo "alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 ```
 
 Now, you can run ordinary git commands in your home directory using your newly
