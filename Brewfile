@@ -1,3 +1,4 @@
+cask_args appdir: "/Applications"
 tap "homebrew/bundle"
 tap "homebrew/core"
 brew "git"

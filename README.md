@@ -4,9 +4,6 @@ My dotfiles, tracked in a bare git repository. No magic, no ceremony.
 
 Technique borrowed from [Nicola Paolucci's blog post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/).
 
-The instructions below assume you are using `zsh`, although this is easily
-adaptable for Bash.
-
 ## Starting from scratch
 
 To bring your existing home directory under version control, initialize a bare
@@ -75,11 +72,14 @@ Aborting
 
 Be sure to back those up first before moving forward.
 
-## Bootstrapping
+## Managing Homebrew dependencies
 
 Once directory is under git management, run the bootstrap script to
 perform additional environment setup (tap Homebrew bundle, install Zsh, etc.):
 
 ```
-script/bootstrap
+Script/bootstrap
 ```
+
+To install new Homebrew packages, add to the `Brewfile`, run `brew bundle`,
+and commit your changes.
