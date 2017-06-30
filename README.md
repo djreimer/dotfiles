@@ -78,7 +78,7 @@ Once directory is under git management, run the bootstrap script to
 perform additional environment setup (tap Homebrew bundle, install Zsh, etc.):
 
 ```
-Script/bootstrap
+script/bootstrap
 ```
 
 To install new Homebrew packages, add to the `Brewfile`, run `brew bundle`,
