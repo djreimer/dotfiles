@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias df='dotfiles'
+
+alias bridge='atom ~/code/bridge'
 
 source $HOME/.aliases/git
 
