@@ -89,8 +89,9 @@ alias df='dotfiles'
 
 alias bridge='atom ~/code/bridge'
 
-source $HOME/.aliases/git
-source $HOME/.aliases/misc
+for file in $HOME/.aliases/* ; do
+  source "$file"
+done
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
