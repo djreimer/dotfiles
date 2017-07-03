@@ -5,6 +5,7 @@ tap "homebrew/core"
 
 brew "elixir"
 brew "git"
+brew "heroku"
 brew "yarn"
 brew "zsh"
 brew "zsh-completions"
