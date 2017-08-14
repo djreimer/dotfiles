@@ -3,7 +3,7 @@
     telemetryConsent: "limited"
   editor:
     fontFamily: "Inconsolata"
-    fontSize: 17
+    fontSize: 15
   "exception-reporting":
     userId: "3e2a6521-5d80-48b6-a64f-bc483270e2d9"
   welcome:
