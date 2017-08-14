@@ -1,0 +1,2 @@
+export GOPATH="/Users/derrickreimer/go"
+export PATH="/Users/derrickreimer/go/bin:$PATH"
