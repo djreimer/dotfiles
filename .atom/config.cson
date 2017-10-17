@@ -3,8 +3,13 @@
     telemetryConsent: "limited"
   editor:
     fontFamily: "Inconsolata"
-    fontSize: 16
+    fontSize: 17
   "exception-reporting":
     userId: "3e2a6521-5d80-48b6-a64f-bc483270e2d9"
+  "linter-rubocop":
+    command: "/Users/derrickreimer/.rbenv/shims/rubocop"
+  "linter-ui-default":
+    showPanel: true
+  "ruby-test": {}
   welcome:
     showOnStartup: false
