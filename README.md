@@ -101,5 +101,5 @@ Then, symlink the files from the `~/.vscode-config` directory:
 ```
 ln -s ~/.vscode-config/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.vscode-config/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s ~/.vscode-config/snippets/ ~/Library/Application\ Support/Code/User/snippets/
+ln -s ~/.vscode-config/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
