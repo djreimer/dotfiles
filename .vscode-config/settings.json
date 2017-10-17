@@ -1,0 +1,13 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "editor.renderIndentGuides": false,
+    "editor.fontFamily": "Inconsolata, Menlo, Monaco, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "terminal.integrated.fontSize": 16,
+    "elm.formatOnSave": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "[elm]": {
+        "editor.tabSize": 4
+    }
+}

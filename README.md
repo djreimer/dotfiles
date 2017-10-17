@@ -72,7 +72,9 @@ Aborting
 
 Be sure to back those up first before moving forward.
 
-## Managing Homebrew dependencies
+## Miscellanea
+
+### Managing Homebrew dependencies
 
 Once directory is under git management, run the bootstrap script to
 perform additional environment setup (tap Homebrew bundle, install Zsh, etc.):
@@ -83,3 +85,21 @@ script/bootstrap
 
 To install new Homebrew packages, add to the `Brewfile`, run `brew bundle`,
 and commit your changes.
+
+### Configuring Visual Studio Code
+
+First, remove the configuration files stored in the application directory:
+
+```
+rm ~/Library/Application\ Support/Code/User/settings.json
+rm ~/Library/Application\ Support/Code/User/keybindings.json
+rm -rf ~/Library/Application\ Support/Code/User/snippets/
+```
+
+Then, symlink the files from the `~/.vscode-config` directory:
+
+```
+ln -s ~/.vscode-config/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/.vscode-config/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/.vscode-config/snippets/ ~/Library/Application\ Support/Code/User/snippets/
+```
