@@ -11,5 +11,6 @@
     "workbench.colorTheme": "Visual Studio Dark",
     "[elm]": {
         "editor.tabSize": 4
-    }
+    },
+    "extensions.ignoreRecommendations": false
 }
