@@ -13,7 +13,7 @@ and [robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 
 At the time of writing, Homebrew is a great way to install Zsh.
 
-```
+```sh
 brew install zsh zsh-completions
 chsh -s /bin/zsh
 ```
@@ -24,7 +24,7 @@ This repository contains a `.zshrc` file, which you will want to override the
 default file created by Zsh. If you need to retain your existing `.zshrc` file,
 move it to a different spot:
 
-```
+```sh
 cd ~
 mv .zshrc .zshrc.pre-dotfiles
 ```
@@ -33,7 +33,6 @@ Next, ensure that your `.dotfiles` directory will be ignored by Git (to eliminat
 recursion issues) by adding to `.gitignore`:
 
 ```sh
-cd ~
 touch .gitignore
 echo ".dotfiles" >> .gitignore
 ```
@@ -41,7 +40,6 @@ echo ".dotfiles" >> .gitignore
 Then, clone this repository into your home directory:
 
 ```sh
-cd ~
 git clone --bare https://github.com/djreimer/dotfiles.git $HOME/.dotfiles
 ```
 
@@ -103,7 +101,7 @@ since only some of the files in the home directory are tracked by Git.
 Once directory is under git management, run the bootstrap script to
 perform additional environment setup (tap Homebrew bundle, install Zsh, etc.):
 
-```
+```sh
 script/bootstrap
 ```
 
@@ -114,7 +112,7 @@ and commit your changes.
 
 First, remove the configuration files stored in the application directory:
 
-```
+```sh
 rm ~/Library/Application\ Support/Code/User/settings.json
 rm ~/Library/Application\ Support/Code/User/keybindings.json
 rm -rf ~/Library/Application\ Support/Code/User/snippets/
@@ -122,7 +120,7 @@ rm -rf ~/Library/Application\ Support/Code/User/snippets/
 
 Then, symlink the files from the `~/.vscode-config` directory:
 
-```
+```sh
 ln -s ~/.vscode-config/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.vscode-config/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s ~/.vscode-config/snippets/ ~/Library/Application\ Support/Code/User/snippets
@@ -141,7 +139,7 @@ dotfiles config --local status.showUntrackedFiles no
 
 Be sure to add the alias to `.zshrc`, either manually or like this:
 
-```
+```sh
 echo "alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 ```
 
