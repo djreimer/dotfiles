@@ -19,7 +19,7 @@ alias gcane='git commit --amend --no-edit'
 alias gclean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 alias gpr='git pull-request'
 
-# Check out a new branch and reset master back one commit
+# Check out a new branch and reset the current branch back one commit
 function branchify {
-  git checkout -b $1 && git reset master --hard HEAD~
+  git branch $1 && git reset --hard HEAD~ && git checkout $1
 }
