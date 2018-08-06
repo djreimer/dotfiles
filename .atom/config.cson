@@ -1,10 +1,13 @@
 "*":
+  "atom-elixir-formatter":
+    formatOnSave: "whenFormatterFilePresent"
   core:
     telemetryConsent: "limited"
   editor:
-    fontFamily: "SF Mono"
-    fontSize: 15
-    lineHeight: 1.7
+    fontFamily: "Inconsolata"
+    fontSize: 18
+  "elm-format":
+    showErrorNotifications: false
   "exception-reporting":
     userId: "3e2a6521-5d80-48b6-a64f-bc483270e2d9"
   "linter-rubocop":
