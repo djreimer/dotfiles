@@ -108,24 +108,6 @@ script/bootstrap
 To install new Homebrew packages, add to the `Brewfile`, run `brew bundle`,
 and commit your changes.
 
-### Configuring Visual Studio Code
-
-First, remove the configuration files stored in the application directory:
-
-```sh
-rm ~/Library/Application\ Support/Code/User/settings.json
-rm ~/Library/Application\ Support/Code/User/keybindings.json
-rm -rf ~/Library/Application\ Support/Code/User/snippets/
-```
-
-Then, symlink the files from the `~/.vscode-config` directory:
-
-```sh
-ln -s ~/.vscode-config/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.vscode-config/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s ~/.vscode-config/snippets/ ~/Library/Application\ Support/Code/User/snippets
-```
-
 ## Starting from scratch
 
 To bring your existing home directory under version control, initialize a bare
